@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navegacion con tabs</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-tachometer" aria-hidden="true"></span><span class="tab-text">USUARIOS POR MINUTO</span></a></li>
+		</ul>
+
+		<div class ="secciones">
+
+			<article id = "tab1">
+
+			<center><h1> Audiencia tvgo Live Perú de Lunes a Viernes - Abril </h1></center>
+			<br>
+			<br>
+
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Total'],
+			['02/04',9797],
+			['03/04',10348],
+			['04/04',10371],
+			['05/04',9466],
+			['06/04',9217],
+			['09/04',10326],
+			['10/04',10792],
+			['11/04',7438],
+			['12/04',10792],
+			['13/04',9875],
+			['16/04',9790],
+			['17/04',9593],
+			['18/04',10779],
+			['19/04',10717],
+			['20/04',10160],
+			['23/04',9148],
+			['24/04',9087],
+			['25/04',12108],
+			['26/04',11310],
+			['27/04',10633],
+			['30/04',8147]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PRIMETIME (18:00 - 23:00)',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div5'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+	
+		   		<div id="chart_div5" style="width: automatic; height: automatic;"></div>
+
+			<br>
+
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		    <script type="text/javascript">
+		    google.charts.load('current', {'packages':['corechart']});
+		    google.charts.setOnLoadCallback(drawChart);
+
+		      function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Desktop','App','MobileWeb'],
+			['02/04',6249,3297,251],
+			['03/04',6409,3689,250],
+			['04/04',6531,3608,232],
+			['05/04',5624,3590,252],
+			['06/04',5394,3561,263],
+			['09/04',6528,3525,274],
+			['10/04',6732,3726,334],
+			['11/04',5154,2005,279],
+			['12/04',6485,3997,310],
+			['13/04',5870,3726,280],
+			['16/04',5968,3562,259],
+			['17/04',5624,3690,279],
+			['18/04',6568,3888,323],
+			['19/04',6359,4027,330],
+			['20/04',6042,3832,286],
+			['23/04',5292,3616,241],
+			['24/04',5003,3838,246],
+			['25/04',6063,5700,345],
+			['26/04',5765,5139,405],
+			['27/04',6036,4281,316],
+			['30/04',4182,3818,147]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PLATAFORMA - PRIMETIME (18:00 - 23:00)',
+		          curveType: 'function',
+		          legend: { position: 'bottom left' }
+		        };
+
+		        var chart = new google.visualization.LineChart(document.getElementById('curve_chart6'));
+
+		        chart.draw(data, options);
+			      }
+			    </script>
+		
+			    <div id="curve_chart6" style="width: automatic; height: automatic"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+			    <center><h1>Audiencia tvgo Live Perú de Lunes a Domingo - Abril </h1></center>
+	<br>
+	<br>
+	<br>
+	<br>	
+
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Total'],
+			['01/04',2982],
+			['02/04',9797],
+			['03/04',10348],
+			['04/04',10371],
+			['05/04',9466],
+			['06/04',9217],
+			['07/04',2690],
+			['08/04',2937],
+			['09/04',10326],
+			['10/04',10792],
+			['11/04',7438],
+			['12/04',10792],
+			['13/04',9875],
+			['14/04',3095],
+			['15/04',3668],
+			['16/04',9790],
+			['17/04',9593],
+			['18/04',10779],
+			['19/04',10717],
+			['20/04',10160],
+			['21/04',3272],
+			['22/04',3569],
+			['23/04',9148],
+			['24/04',9087],
+			['25/04',12108],
+			['26/04',11310],
+			['27/04',10633],
+			['28/04',5402],
+			['29/04',4038],
+			['30/04',8147]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PRIMETIME (18:00 - 23:00)',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div11'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+	
+		   		<div id="chart_div11" style="width: automatic; height: automatic;"></div>
+
+			<br>
+
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		    <script type="text/javascript">
+		    google.charts.load('current', {'packages':['corechart']});
+		    google.charts.setOnLoadCallback(drawChart);
+
+		      function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Desktop','App','MobileWeb'],
+			['01/04',1915,1007,60],
+			['02/04',6249,3297,251],
+			['03/04',6409,3689,250],
+			['04/04',6531,3608,232],
+			['05/04',5624,3590,252],
+			['06/04',5394,3561,263],
+			['07/04',1564,1079,47],
+			['08/04',1824,1047,66],
+			['09/04',6528,3525,274],
+			['10/04',6732,3726,334],
+			['11/04',5154,2005,279],
+			['12/04',6485,3997,310],
+			['13/04',5870,3726,280],
+			['14/04',1907,1135,52],
+			['15/04',2464,1123,80],
+			['16/04',5968,3562,259],
+			['17/04',5624,3690,279],
+			['18/04',6568,3888,323],
+			['19/04',6359,4027,330],
+			['20/04',6042,3832,286],
+			['21/04',2091,1126,55],
+			['22/04',2358,1138,74],
+			['23/04',5292,3616,241],
+			['24/04',5003,3838,246],
+			['25/04',6063,5700,345],
+			['26/04',5765,5139,405],
+			['27/04',6036,4281,316],
+			['28/04',3245,2009,148],
+			['29/04',2635,1331,72],
+			['30/04',4182,3818,147]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PLATAFORMA - PRIMETIME (18:00 - 23:00)',
+		          curveType: 'function',
+		          legend: { position: 'bottom left' }
+		        };
+
+		        var chart = new google.visualization.LineChart(document.getElementById('curve_chart12'));
+
+		        chart.draw(data, options);
+			      }
+			    </script>
+		
+			    <div id="curve_chart12" style="width: automatic; height: automatic"></div>
+
+			</article>
+				 
+		</div>
+	</div>
+	
+</body>
+</html>
+
